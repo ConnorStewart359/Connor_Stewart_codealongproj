@@ -27,9 +27,16 @@ qaItems.forEach(qaItems => {
     const questionDiv = document.createElement("div")
     questionDiv.classList.add("accordion-question")
     questionDiv.textContent = questionText
+
     const answerDiv = document.createElement("div")
     answerDiv.classList.add("accordion-answer")
     answerDiv.textContent = answerText
+
     questionDiv.appendChild(answerDiv)
+
+    questionDiv.addEventListener("click", () => {
+        questionDiv.classList.toggle("active")
+        answerDiv.classList.toggle("active")
+    })
     accordionDiv.appendChild(questionDiv)
 })
