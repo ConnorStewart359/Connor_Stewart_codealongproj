@@ -4,10 +4,11 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Chacher's Food Deliveries</title>
+		<script src="index.js" defer></script>
     </head>
     <body>
         <header>
-			<img src="images/Cahcers.png" alt="logo" height="75px" width="75px"/>
+			<img src="images/Cachers.png" alt="logo" height="75px" width="75px"/>
 			<b>Cacher's Food Deliveries</b>
 			<nav>
 				<ul>
@@ -46,9 +47,60 @@
 						Your satisfaction is our top priority. Understanding that issues can arise we can offer a hassle-free 7-day refund policy for your items. We guarentee a straightforward and prompt refund process ensuring that your experince with us remains positive and worry-free. 
 					</p>
 				</div>
-			<section id="questions"></section>
-			<section id="contact"></section>
+			<section id="questions">
+				<h2>Common Questions</h2>
+				<div id="accordion"></div>
+			</section>
+			<section id="contact">
+				<blockquote>
+					<h3>"I was blown away by the speed and efficiency of Cherry Deliveries. I recieved my package in less than 24 hours!"</h3>
+					<p>John Doe</p>
+				</blockquote>
+				<form method="post">
+					<h2>Contact Us</h2>
+					<div class="input-row">
+						<div class="input-group">
+							<label for="first-name">First Name</label>
+							<input name="first-name" 
+							type="text" 
+							placeholder = "Enter your first name"
+							required/>
+						</div>
+						<div class="input-group">
+							<label for="last-name">Last Name</label>
+							<input name="last-name" 
+							type="text" 
+							placeholder = "Enter your last name"
+							required/>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-group">
+							<label for="last-name">Subject</label>
+							<select id="subject">
+								<option value="general" selected>General</option>
+								<option value="delivery">Delivery</option>
+								<option value="refund">Refund</option>
+							</select>
+						</div>
+						<div class="input-group">
+							<label for="email">Email</label>
+							<input id="email" 
+							type="text" 
+							placeholder = "Enter your email"
+							required/>
+						</div>
+					</div>
+					<div class= "input-group">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+					</div>
+					<button>Submit</button>
+				</form>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<p>&copy; Cacher's Deliveries 2024</p>
+		</footer>
     </body>
 </html>
