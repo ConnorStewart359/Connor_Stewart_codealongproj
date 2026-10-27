@@ -1,124 +1,58 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-		<meta charset="UTF-8"/>
+		<meta charset="UTF-16"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 		<title>Chacher's Food Deliveries</title>
-		<link rel="stylesheet" href="index.css" />
 		<script src="index.js" defer></script>
     </head>
     <body>
         <header>
-			<div class="navbar">
-				<div class="logo">
-					<img src="images/Cachers.png" alt="logo" height="75px" width="75px"/>
-				</div>
-				<b>Cacher's Food Deliveries</b>
-				<nav>
-					<ul>
-						<li><a href="#landing">Home</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="dashboard.html">Dashboard</a></li>
-					</ul>
-				</nav>
-			</div>
+			<img src="images/Cachers.png" alt="logo" height="75px" width="75px"/>
+			<b>Cacher's Food Deliveries</b>
+			<nav>
+				<ul>
+					<li><a href="#landing">Home</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main id="#landing">
-			
-			<section id="hero">
-				<div class="hero-content">
+			<button>Get Started</button>
+			<section id="hero-section">
 				<h1>Fast. Safe. Reliable.</h1>
-				<p>Experience the pinnacle of delivery services, where your needs are met
-					properly and with utmost care.</p>
-					<button>Get Started</button>
-				</div>
+				<p>Experience the pinnacle of delivery services, where your needs are met properly and with utmost care.</p>
 			</section>
 			<section id="marketing materials">
 				<div class="card">
 					<img src="images/deliveries.jpg" alt="deliveries">
-					<div class="card-text">
 					<h2>Always Fast Deliveries</h2>
 					<p>
 						Here at <b>Cacher's Deliveries</b>, we have unwaivering commitment to customer satisfaction. Our dedicated team assures every package is delivered with exceptional speed.
 					</p>
-					</div>
 				</div>
 				<div class="card">
 					<img src="images/safety.jpg" alt="safety">
-					<div class="card-text">
 					<h2>Saftey First Shipping</h2>
 					<p>
 						Pride in delivery meets the pinnacle of saftey and precision. Our expertly trained team is dedicated to handling your packages with the utmost respect and security. Each item is treated with individualized care, ensuring a reliable and safe delivery experience every time.
 					</p>
-					</div>
 				</div>
 			</section>
 				<div class="card">
 					<img src="images/problem.jpg" alt="problem?">
-					<div class="card-text">
 					<h2>Problem? We Got You Covered</h2>
 					<p>
 						Your satisfaction is our top priority. Understanding that issues can arise we can offer a hassle-free 7-day refund policy for your items. We guarentee a straightforward and prompt refund process ensuring that your experince with us remains positive and worry-free. 
 					</p>
-					</div>
 				</div>
 			<section id="questions">
 				<h2>Common Questions</h2>
 				<div id="accordion"></div>
 			</section>
-			<section id="contact">
-				<blockquote>
-					<h3>"I was blown away by the speed and efficiency of Cherry Deliveries. I recieved my package in less than 24 hours!"</h3>
-					<p>John Doe</p>
-				</blockquote>
-				<form method="post">
-					<h2>Contact Us</h2>
-					<div class="input-row">
-						<div class="input-group">
-							<label for="first-name">First Name</label>
-							<input name="first-name" 
-							type="text" 
-							placeholder = "Enter your first name"
-							required/>
-						</div>
-						<div class="input-group">
-							<label for="last-name">Last Name</label>
-							<input name="last-name" 
-							type="text" 
-							placeholder = "Enter your last name"
-							required/>
-						</div>
-					</div>
-					<div class="input-row">
-						<div class="input-group">
-							<label for="last-name">Subject</label>
-							<select id="subject">
-								<option value="general" selected>General</option>
-								<option value="delivery">Delivery</option>
-								<option value="refund">Refund</option>
-							</select>
-						</div>
-						<div class="input-group">
-							<label for="email">Email</label>
-							<input id="email" 
-							type="text" 
-							placeholder = "Enter your email"
-							required/>
-						</div>
-					</div>
-					<div class= "input-group">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-					</div>
-					<button>Submit</button>
-				</form>
-			</section>
+			<section id="contact"></section>
 		</main>
-		<footer>
-			<p>&copy; Cacher's Deliveries 2024</p>
-		</footer>
+		<footer></footer>
     </body>
 </html>
