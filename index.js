@@ -191,12 +191,7 @@ class CookieStorageDeliveryDAO extends deliveryDAO{
     create(deliveryData){
         const existingDeliveries = this.getAll()
         existingDeliveries.push(deliveryData)
-        console.log(deliveryData)
-        console.log(existingDeliveries)
         document.cookie = `deliveries=${JSON.stringify(existingDeliveries)};`
-        if(!document.cookie){
-            console.log("ahhhhhh")
-        }
     }
     getAll() {
         const existingCookieValue = document.cookie
@@ -267,7 +262,6 @@ productNameSelect.addEventListener("change", handleChangeToProductName)
 const createdeliveryForm = document.querySelector("#deliveries form")
 createdeliveryForm.addEventListener("submit", (event) => {
     const formData = new FormData(event.target)
-    event.preventDefault()
     const address = formData.get("address")
     const scheduledTime = formData.get("scheduledTime")
     const productName = formData.get("productName")
